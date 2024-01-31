@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>OneShot</title>
+    <link href="/static/css/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="title">
+        <a href = '/' name="title" id="title"> <h1>OneShot</h1> </a>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href='/profile' name="profile" id="profile"> Profile </a></li>
+          <li><a href='/write' name="plan" id="plan"> Write </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+  </body>
+</html> 

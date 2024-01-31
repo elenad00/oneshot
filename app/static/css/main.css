@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Prompt|Satisfy&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* page basics */
+h1 {
+  color: #fff;
+  font-family: "Satisfy", cursive;
+  font-size: 50px;
+  margin: 20px;
+}
+
+h2 {
+  color: #a4b494;
+  font-family: "Satisfy", cursive;
+  font-size: 35px;
+  margin: 10px 0px;
+}
+
+h3{
+  color: #bec5ad;
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+p{
+  color: #30343f;
+  font-family: "Prompt";
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
+a{
+  font-family: 'Prompt', sans-serif;
+  font-size: 16px;
+  color: #FCF7FF;
+  text-align: center;
+  text-decoration: none;
+
+  display: block;
+  padding: 10px 10px;
+  border: none;
+  background-color: #a4b494;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px;
+}
+
+button:hover, a:hover{
+  background-color: #bec5ad;
+  cursor: pointer;
+}
+
+.header{
+  display: table;
+  width: 98%;
+  margin: 20px;
+}
+.title {
+  position: left;
+  margin-right:40px;
+}
+
+.nav{
+  margin-right: 40px;
+}
+.nav li{
+  float: right;
+}
+.nav ul{
+  list-style-type: none;
+}
+
+.content{
+  display: inline-block;
+  margin: 0px 40px;
+  border: 10px;
+}
+
+/* today page */
+.foodguide a{
+  width: 120px;
+}
+
+.login{
+  display: inline-block;
+}
