@@ -25,3 +25,6 @@
 ## Publishing Houses Pages
 - Your Portfolio
 - Interested Parties
+
+## Third Parties
+- MongoDB - for data storage

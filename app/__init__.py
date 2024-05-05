@@ -1,13 +1,19 @@
 from flask import Flask, render_template
+import app.static.filler_text as filler_text
 
 app = Flask(__name__)
+app.config['TEMPLATES_AUTO_RELOAD']=True
 
 @app.route('/')
 def index() -> str:
-    return render_template('home.html')
+    return render_template(
+        'index.html',
+        who_are_we=filler_text.who_are_we,
+        membership = filler_text.membership
+    )
 
-@app.route('/<username>')
-def profile(username) -> str:
+@app.route('/user/<username>')
+def profile(username: str) -> str:
     return render_template('profile.html')
 
 @app.route('/write')
@@ -24,9 +30,9 @@ def login():
 def signup():
     return render_template('signup.html')
 
-@app.route('/error')
-def error():
-  return render_template('blank.html')
+@app.errorhandler(404)
+def pnf(error):
+    return render_template('error.html')
 
 
 if __name__ == '__main__':

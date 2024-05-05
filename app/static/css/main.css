@@ -1,36 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Prompt|Satisfy&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 /* page basics */
+
 h1 {
-  color: #fff;
-  font-family: "Satisfy", cursive;
-  font-size: 50px;
+  color: #ffffff;
+  font-family: "Roboto Mono", cursive;
+  font-size: 30px;
   margin: 20px;
 }
 
 h2 {
   color: #a4b494;
-  font-family: "Satisfy", cursive;
+  font-family: "Roboto Mono", cursive;
   font-size: 35px;
   margin: 10px 0px;
 }
 
 h3{
   color: #bec5ad;
-  font-family: "Satisfy", cursive;
+  font-family: "Roboto Mono", cursive;
   font-size: 20px;
   margin: 10px 0px;
 }
 
 p{
   color: #30343f;
-  font-family: "Prompt";
+  font-family: "Roboto Mono";
   font-size: 16px;
   margin: 10px 0px;
 }
 
 a{
-  font-family: 'Prompt', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   font-size: 16px;
   color: #FCF7FF;
   text-align: center;
@@ -46,28 +46,40 @@ a{
 }
 
 button:hover, a:hover{
-  background-color: #bec5ad;
+  background-color: #c5adad;
   cursor: pointer;
 }
 
 .header{
-  display: table;
-  width: 98%;
-  margin: 20px;
+  border-bottom: 1px ;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 100px;
+  background-color: #ffffff;
 }
-.title {
-  position: left;
-  margin-right:40px;
+
+.home-button{
+  padding: 10px;
 }
 
 .nav{
+  display: flex;
+  align-items: center;
+  height: 54px;
+  vertical-align: middle;
+  padding: 10px 9px;
   margin-right: 40px;
 }
-.nav li{
-  float: right;
-}
+
 .nav ul{
   list-style-type: none;
+}
+
+.nav li{
+  float: left;
 }
 
 .content{
@@ -77,9 +89,6 @@ button:hover, a:hover{
 }
 
 /* today page */
-.foodguide a{
-  width: 120px;
-}
 
 .login{
   display: inline-block;
