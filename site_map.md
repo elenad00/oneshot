@@ -1,11 +1,12 @@
 # Writeaway Site Map
 ## Primary Pages
-- Homepage
+- Main Homepage
     - Writer Spotlights
     - New Works
 - Login
 - Sign Up
     - Tailored signup for writers, editors, publishers
+- Users Homepage
 - Account Settings
 - Profile
 - Contact Members

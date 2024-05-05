@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
+<div class = 'who_are_we'>
+    <h2> Welcome to Writeaway </h2>
+    {% for question in who_are_we %}
+    <h3>{{question}}</h3>
+    <p>{{who_are_we.get(question)}}</p>
+    {% endfor %}
+</div>
+<div class="membership">
+    <h2> Membership </h2>
+    <p> 
+        Writeaway is free for everyone, taking away the glass ceiling of the writing world. Writers can add five works to their portfolio for free, and editors can have their words accepted by fifteen works for free too. But if you want more, our tiered memberships might be for you. Cancel any time, and have your works stored in our archive, meaning you can still highlight your best work by choosing which stories and edits show on your profile. We will always be advert free and will never pay-wall works.
+    </p>
+    {% for tier in membership %}
+        <h3>{{tier}}</h3>
+        <ul>
+        {% for point in membership.get(tier)%}
+            <li><p>{{point}}</p></li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+</div>
+
+{% endblock %}

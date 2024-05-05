@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Writeaway</title>
-    <link href="/static/css/main.css" rel="stylesheet" type="text/css" />
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Writeaway</title>
+        <link href="/static/css/main.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/static/images/Icon_Logo.png" />
 
-  <body>
-    <div class="header">
-      <div class="title">
-        <a href = '/' name="title" id="title"><h1>Writeaway</h1> </a>
-      </div>
-      <div class="nav">
-        <ul>
-          <li><a href='/profile' name="profile" id="profile"> Profile </a></li>
-          <li><a href='/portfolio' name="portfolio" id="portfolio"> Portfolio </a></li>
-        </ul>
-      </div>
-    </div>
+    </head>
 
-    <div class="content">
-      {% block content %}
-      {% endblock %}
-    </div>
+    <body>
+        <header class="header">
+        <div class="nav">
+            <ul>
+                <li><a href = '/' name="title" id="title">
+                    <img name="header_logo" id='header_logo' src="/static/images/Writeaway.png"></img>
+                </a></li>
+                {% if new_user %}
+                    <li><a href='/signup' name="signup" id="signup"> Join Writeaway </a></li>
+                    <li><a href='/login' name="login" id="login"> Login </a></li>
+                {% else %}
+                    <li>
+                        <a href='/profile' name="profile" id="profile"> Profile </a>
+                    </li>
+                    <li>
+                        <a href='/portfolio' name="portfolio" id="portfolio"> Portfolio </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+        </header>
 
-  </body>
-</html> 
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    
+    </body>
+  </html> 

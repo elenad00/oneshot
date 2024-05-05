@@ -1,21 +1,23 @@
 {% extends 'base.html' %}
-
 {% block content %}
-<div class = "welcome">
-  <h2> Hi {{username}}! </h2>
-  <h3> Welcome Back to Writeaway!</h3>
-  <p> </p>
-</div>
+    <div class = "welcome">
+        <h2> Hi {{username}}! </h2>
+        <h3> Welcome Back to Writeaway!</h3>
+        <p> </p>
+    </div>
 
-<div class = "overview">
-  <h2> Today's Overview</h2>
-  <p> Here's how your portfolio is doing today: </p>
-  <h3> Interested Publishing Houses</h3>
-  <p> {{publisher_counts}} </p>
-  <h3> Interested Editors </h3>
-  <p> {{editor_count}} </p>
-  <h3> Interested Agents </h3>
-  <p> {{agent_count}} </p>
+    <div class = "overview">
+        <h2> Today's Overview</h2>
+        <p> Here's how your portfolio is doing today: </p>
+        <h3> Interested Publishing Houses: {{publisher_count}} </h3>
+        <h3> Interested Editors: {{editor_count}} </h3>
+    </div>
 
-</div>
+    <div class = 'your_portfolio'>
+        <h2> Your Published Portfolio </h2>
+        {% for book in user_portfolio %}
+            <h3> {{book}} </h2>
+        {% endfor %}
+    </div>
+
 {% endblock %}
