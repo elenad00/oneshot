@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+writeaway/__init__.py
+writeaway/views.py
+writeaway.egg-info/PKG-INFO
+writeaway.egg-info/SOURCES.txt
+writeaway.egg-info/dependency_links.txt
+writeaway.egg-info/requires.txt
+writeaway.egg-info/top_level.txt
+writeaway/static/scripts/filler_text.py
+writeaway/static/scripts/user_configs.py
