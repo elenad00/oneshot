@@ -32,7 +32,7 @@ p{
 
 a{
   font-family: 'DM Serif Display', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #000;
   text-align: center;
   text-decoration: none;
@@ -47,49 +47,60 @@ a{
 }
 
 button:hover, a:hover{
-  background-color: #c5adad;
   cursor: pointer;
-}
-
-.header{
-  border-bottom: 1px;
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  height: 100px;
-  background-color: #ffffff;
 }
 
 .nav{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  height: 54px;
+  align-content: center;
+  position: sticky;
+  top:0;
   vertical-align: middle;
-  padding: 10px;
+  background-color: #fff;
+  margin: 10px 40px;
+  height: 100px;
+}
+
+.nav a{
+  float: right;
+  padding: 15px;
+  width: 100px;
 }
 
 .nav ul{
   list-style-type: none;
-  display: flex;
 }
 
 .nav li{
-  float: left;
+  padding: 0px;
+  width: 150px;
+  height: 100px;
 }
 
-#title{
-  margin: 0px;
-  padding: 0px;
-  height:0px;
+.page_icon{
+  order: 0;
+}
+.page_icon img{
+  width: 275px;
 }
 
-#title img{
-  width: 200px;
+.page_buttons{
+  width: auto;
+  order: 1;
+}
+
+.page_buttons ul{
+  width: auto;
   padding: 0px;
-  margin: 0px;
-  border-radius: 5%;
+  margin: auto;
+}
+
+.page_buttons li{
+  display: inline-block;
+  height: auto;
 }
 
 .content{

@@ -10,31 +10,25 @@
     </head>
 
     <body>
-        <header class="header">
         <div class="nav">
-            <ul>
-                <li><a href = '/' name="title" id="title">
-                    <img name="header_logo" id='header_logo' src="/static/images/Writeaway.png"></img>
-                </a></li>
+            <div class="page_icon">
+                <img src="/static/images/Writeaway.png"></img>
+            </div>
+            <div class='page_buttons'>
+                <ul>
                 {% if new_user %}
                     <li><a href='/signup' name="signup" id="signup"> Join Writeaway </a></li>
                     <li><a href='/login' name="login" id="login"> Login </a></li>
                 {% else %}
-                    <li>
-                        <a href='/profile' name="profile" id="profile"> Profile </a>
-                    </li>
-                    <li>
-                        <a href='/portfolio' name="portfolio" id="portfolio"> Portfolio </a>
-                    </li>
+                    <li><a href='/profile' name="profile" id="profile"> Profile </a></li>
+                    <li><a href='/portfolio' name="portfolio" id="portfolio"> Portfolio </a></li>
                 {% endif %}
-            </ul>
+                </ul>
+            </div>
         </div>
-        </header>
-
         <div class="content">
             {% block content %}
             {% endblock %}
         </div>
-    
     </body>
   </html> 
