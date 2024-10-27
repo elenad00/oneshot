@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 /* page basics */
 
@@ -18,21 +19,24 @@ h2 {
 
 h3{
   color: #000;
-  font-family: "DM Serif Display";
+  font-family: "League Spartan";
   font-size: 20px;
   margin: 10px 0px;
 }
 
 p{
   color: #000;
-  font-family: "DM Serif Display";
-  font-size: 16px;
+  font-family: "League Spartan";
+  font-size: 18px;
+
+  font-weight: 400;
   margin: 10px 0px;
 }
 
 a{
-  font-family: 'DM Serif Display', sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-size: 18px;
+  font-weight: 500;
   color: #000;
   text-align: center;
   text-decoration: none;
@@ -60,29 +64,24 @@ button:hover, a:hover{
   top:0;
   vertical-align: middle;
   background-color: #fff;
-  margin: 10px 40px;
+  padding: 10px 40px;
   height: 100px;
 }
 
 .nav a{
   float: right;
   padding: 15px;
-  width: 100px;
+  margin: 15px;
+  width: 125px;
 }
 
-.nav ul{
-  list-style-type: none;
-}
-
-.nav li{
-  padding: 0px;
-  width: 150px;
+.page_icon a{
   height: 100px;
+  width: 275px;
+  padding: 0px;
+  margin: 0px;
 }
 
-.page_icon{
-  order: 0;
-}
 .page_icon img{
   width: 275px;
 }
@@ -90,15 +89,14 @@ button:hover, a:hover{
 .page_buttons{
   width: auto;
   order: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.page_buttons ul{
-  width: auto;
-  padding: 0px;
-  margin: auto;
-}
-
-.page_buttons li{
+.page_buttons a{
+  width: 125px;
   display: inline-block;
   height: auto;
 }

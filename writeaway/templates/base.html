@@ -12,18 +12,18 @@
     <body>
         <div class="nav">
             <div class="page_icon">
-                <img src="/static/images/Writeaway.png"></img>
+                <a href='/'> 
+                    <img src="/static/images/Writeaway.png">
+                </a>
             </div>
             <div class='page_buttons'>
-                <ul>
-                {% if new_user %}
-                    <li><a href='/signup' name="signup" id="signup"> Join Writeaway </a></li>
-                    <li><a href='/login' name="login" id="login"> Login </a></li>
+                {% if not new_user %}
+                    <a href='/signup'> Join Writeaway </a>
+                    <a href='/login'> Login </a>
                 {% else %}
-                    <li><a href='/profile' name="profile" id="profile"> Profile </a></li>
-                    <li><a href='/portfolio' name="portfolio" id="portfolio"> Portfolio </a></li>
+                    <a href='/profile'> Profile </a>
+                    <a href='/portfolio'> Portfolio </a>
                 {% endif %}
-                </ul>
             </div>
         </div>
         <div class="content">
